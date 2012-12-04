@@ -1,0 +1,23 @@
+<fieldset>
+	<legend> List To Do  "<%=@list.title%>" | <%=link_to "Edit title", edit_list_path%></legend>
+	  <div class= "form_list">
+	  <legend>Taks</legend>
+
+	  <div id="tasks">
+		<% if @list.tasks%>  
+		  <%=render @list.tasks%>
+		<%else%>
+		  <p>This list don't have any task</p>
+		<%end%>
+	  </div>
+	<legend>New Task</legend>
+	<%=simple_form_for([@list, @list.tasks.build]) do |f|%>
+	  <div class="well">
+	      <%= f.input :title_task %>
+	      <%= f.input :status, as: :boolean  %>
+	      <%= f.submit class: "btn btn-primary  " %>
+	  </div>
+	<%end%>
+	</div>
+</fieldset>
+<p>	<%=link_to "Back To All List", root_path, class: "btn"%></p>

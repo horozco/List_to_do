@@ -1,0 +1,5 @@
+<div class = "well">
+  <b><%="#{task.title_task}"%></b>
+  <p><%= task.status%></p>
+  <%=link_to "Delete task", list_task_path(task.list, task), method: :delete, data:{confirm: "Are you sure your want to delete this task?"}%>
+</div>
