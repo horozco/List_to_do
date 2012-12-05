@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
   <head>
-    <title>Code coverage for Todolist</title>
+    <title>Code coverage for List to do</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.7.1/application.js' type='text/javascript'></script>    
     <link href='./assets/0.7.1/application.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" type="image/png" href="./assets/0.7.1/favicon_red.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/0.7.1/favicon_green.png" />
     <link rel="icon" type="image/png" href="./assets/0.7.1/favicon.png" />
   </head>
   
@@ -14,27 +14,27 @@
       <img src="./assets/0.7.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2012-12-04T00:12:59-05:00">2012-12-04T00:12:59-05:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2012-12-05T14:01:49-05:00">2012-12-05T14:01:49-05:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">77.32%</span></span>
+    (<span class="covered_percent"><span class="green">97.53%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.75
+         0.96
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>19</b> files in total.
-    <b>97</b> relevant lines. 
-    <span class="green"><b>75</b> lines covered</span> and
-    <span class="red"><b>22</b> lines missed </span>
+    <b>25</b> files in total.
+    <b>162</b> relevant lines. 
+    <span class="green"><b>158</b> lines covered</span> and
+    <span class="red"><b>4</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -51,7 +51,7 @@
     <tbody>
       
       <tr>
-        <td class="strong"><a href="#f7df28564a555e8a258ffa44fc0cb3d86b746a9b" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
+        <td class="strong"><a href="#efcc3f314e5cc262fb52f948b2baad390d2867c2" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>3</td>
         <td>2</td>
@@ -61,17 +61,27 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#a417e8106e0b0fae48606f12301542a1bd41c383" class="src_link" title="app/controllers/lists_controller.rb">app/controllers/lists_controller.rb</a></td>
-        <td class="red strong">26.67 %</td>
-        <td>52</td>
-        <td>30</td>
-        <td>8</td>
+        <td class="strong"><a href="#0a1adc0f53c0db72736d21798eb20558d3bb3d4c" class="src_link" title="app/controllers/lists_controller.rb">app/controllers/lists_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>53</td>
+        <td>31</td>
+        <td>31</td>
+        <td>0</td>
+        <td>1.3</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#0250c240c51de9384da297a45aa5a66732e945a8" class="src_link" title="app/controllers/tasks_controller.rb">app/controllers/tasks_controller.rb</a></td>
+        <td class="yellow strong">81.82 %</td>
+        <td>39</td>
         <td>22</td>
-        <td>0.3</td>
+        <td>18</td>
+        <td>4</td>
+        <td>1.4</td>
       </tr>
       
       <tr>
-        <td class="strong"><a href="#248445bdda2832b1af5ff9803748c54234a0e8e4" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
+        <td class="strong"><a href="#86c8429c8820c076027482edf0da95a21ccbb06f" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>2</td>
         <td>1</td>
@@ -81,7 +91,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#5048f0694c74644c570513b2639556ab78aef76a" class="src_link" title="app/helpers/lists_helper.rb">app/helpers/lists_helper.rb</a></td>
+        <td class="strong"><a href="#5579ea98362015ca13040cbdc61e9166e5bc2e10" class="src_link" title="app/helpers/lists_helper.rb">app/helpers/lists_helper.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>2</td>
         <td>1</td>
@@ -91,7 +101,27 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#5154121073f90c213454bc1fb41547f371f1585e" class="src_link" title="app/models/list.rb">app/models/list.rb</a></td>
+        <td class="strong"><a href="#7be866fdc40d4d160ae017e4bf0d1144107c34d5" class="src_link" title="app/helpers/tasks_helper.rb">app/helpers/tasks_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#c8b566572799261988da44e8caa8239ce3075771" class="src_link" title="app/helpers/widgets_helper.rb">app/helpers/widgets_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#dcf1b6fffae3b38aca3ede920044d27c6f9f19de" class="src_link" title="app/models/list.rb">app/models/list.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>5</td>
         <td>4</td>
@@ -101,17 +131,17 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#6d1359111163badc2f4ead1884cf2d03b1383751" class="src_link" title="app/models/task.rb">app/models/task.rb</a></td>
+        <td class="strong"><a href="#7a72e1787ca14ca5ce3b788fef845087c6ef5987" class="src_link" title="app/models/task.rb">app/models/task.rb</a></td>
         <td class="green strong">100.0 %</td>
+        <td>7</td>
         <td>6</td>
-        <td>5</td>
-        <td>5</td>
+        <td>6</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
       
       <tr>
-        <td class="strong"><a href="#b4d362f93cd1063df289147bf1779cd13360463e" class="src_link" title="config/application.rb">config/application.rb</a></td>
+        <td class="strong"><a href="#1986ac20472601f342df941741507c8cd7a1a983" class="src_link" title="config/application.rb">config/application.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>68</td>
         <td>16</td>
@@ -121,7 +151,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#a00f3cc5020902409646c74283f2818212ef383e" class="src_link" title="config/boot.rb">config/boot.rb</a></td>
+        <td class="strong"><a href="#8caae49f335117f9369567ebe8a8d76405065b9b" class="src_link" title="config/boot.rb">config/boot.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>6</td>
         <td>3</td>
@@ -131,7 +161,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#3a0af38ca4787f8e6e9f84b75fc643ff8cfa833a" class="src_link" title="config/environment.rb">config/environment.rb</a></td>
+        <td class="strong"><a href="#ddaa838ee47a01c7e083b642c6e676b7b4ddf33b" class="src_link" title="config/environment.rb">config/environment.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>5</td>
         <td>2</td>
@@ -141,7 +171,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#d2e785641ec9bf21d069b07353115c4d1898bfa4" class="src_link" title="config/environments/test.rb">config/environments/test.rb</a></td>
+        <td class="strong"><a href="#8328860ae3ffbb7d55f3f0c3c0848c2987054abf" class="src_link" title="config/environments/test.rb">config/environments/test.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>37</td>
         <td>12</td>
@@ -151,7 +181,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#831943d01ea1aac67979a158a00ea46e1dc2fd63" class="src_link" title="config/initializers/backtrace_silencers.rb">config/initializers/backtrace_silencers.rb</a></td>
+        <td class="strong"><a href="#bd8ff8a77a478836670c9e2483342ebb08d07984" class="src_link" title="config/initializers/backtrace_silencers.rb">config/initializers/backtrace_silencers.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>7</td>
         <td>0</td>
@@ -161,7 +191,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#0ac501870f2f56e54679564271d523b17a010b8a" class="src_link" title="config/initializers/inflections.rb">config/initializers/inflections.rb</a></td>
+        <td class="strong"><a href="#3f5d7db5f7ef2932e90339e2714e6f10432d7a37" class="src_link" title="config/initializers/inflections.rb">config/initializers/inflections.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>15</td>
         <td>0</td>
@@ -171,7 +201,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#96f0a9413d89b3a5111d4dbcc931e0c873517c3c" class="src_link" title="config/initializers/mime_types.rb">config/initializers/mime_types.rb</a></td>
+        <td class="strong"><a href="#6f6ee97c0acbd4c10e4fd8d3626eb027ff659864" class="src_link" title="config/initializers/mime_types.rb">config/initializers/mime_types.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>5</td>
         <td>0</td>
@@ -181,7 +211,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#1d675386abd3cf2c581b15825f9096f2ce8ba13e" class="src_link" title="config/initializers/secret_token.rb">config/initializers/secret_token.rb</a></td>
+        <td class="strong"><a href="#abf65a9aad6adc62f1dd001bfa33d2025007797c" class="src_link" title="config/initializers/secret_token.rb">config/initializers/secret_token.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>7</td>
         <td>1</td>
@@ -191,7 +221,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#55c62844eba8f243cb89174afa1ebc23ef5ea40d" class="src_link" title="config/initializers/session_store.rb">config/initializers/session_store.rb</a></td>
+        <td class="strong"><a href="#3b7b5106d71707f77c711e86a6c447a8296723cb" class="src_link" title="config/initializers/session_store.rb">config/initializers/session_store.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>8</td>
         <td>1</td>
@@ -201,7 +231,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#55c48256791aebf02ecfedbb3d222bfd0e0d2c85" class="src_link" title="config/initializers/wrap_parameters.rb">config/initializers/wrap_parameters.rb</a></td>
+        <td class="strong"><a href="#e2ef256cfc15ef420ea919fe222bd03cac472480" class="src_link" title="config/initializers/wrap_parameters.rb">config/initializers/wrap_parameters.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>14</td>
         <td>4</td>
@@ -211,31 +241,61 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#5d678419581f9c0ca950759a1da92de478d6f00c" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
+        <td class="strong"><a href="#8e3fadee1832af07854d0816e4db98e9e33b2293" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>65</td>
-        <td>4</td>
-        <td>4</td>
+        <td>11</td>
+        <td>5</td>
+        <td>5</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
       
       <tr>
-        <td class="strong"><a href="#523a12942a95622ae2a85c866ff23544309b4482" class="src_link" title="spec/controllers/tasks_controller_spec.rb">spec/controllers/tasks_controller_spec.rb</a></td>
+        <td class="strong"><a href="#b0f0f1c6f7f6f9f5ad3d1031deaca717b5196f20" class="src_link" title="spec/controllers/tasks_controller_spec.rb">spec/controllers/tasks_controller_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>43</td>
+        <td>24</td>
+        <td>24</td>
         <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
+        <td>1.1</td>
       </tr>
       
       <tr>
-        <td class="strong"><a href="#24f0b8d6e9f6415c92fc5f24cf83bc1d1880b586" class="src_link" title="spec/factories.rb">spec/factories.rb</a></td>
+        <td class="strong"><a href="#a58a846c05333eefa57b07c563f3463b146df8ab" class="src_link" title="spec/factories.rb">spec/factories.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>21</td>
-        <td>11</td>
-        <td>11</td>
+        <td>22</td>
+        <td>12</td>
+        <td>12</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#5dbe44f59a1f5bd413096b6345330325c8d628ac" class="src_link" title="spec/models/list_spec.rb">spec/models/list_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>6</td>
+        <td>4</td>
+        <td>4</td>
+        <td>0</td>
+        <td>1.5</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#2764d04daef670343aa7388b78402fbe77651864" class="src_link" title="spec/models/task_spec.rb">spec/models/task_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>7</td>
+        <td>5</td>
+        <td>5</td>
+        <td>0</td>
+        <td>1.6</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#a2126462cd48a5a4e6723368090fb825812c96e1" class="src_link" title="spec/routing/routes_spec.rb">spec/routing/routes_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>9</td>
+        <td>4</td>
+        <td>4</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -256,7 +316,7 @@
     
       <div class="source_files">
       
-        <div class="source_table" id="f7df28564a555e8a258ffa44fc0cb3d86b746a9b">
+        <div class="source_table" id="efcc3f314e5cc262fb52f948b2baad390d2867c2">
   <div class="header">
     <h3>app/controllers/application_controller.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -292,14 +352,14 @@
   </pre>
 </div>
       
-        <div class="source_table" id="a417e8106e0b0fae48606f12301542a1bd41c383">
+        <div class="source_table" id="0a1adc0f53c0db72736d21798eb20558d3bb3d4c">
   <div class="header">
     <h3>app/controllers/lists_controller.rb</h3>
-    <h4><span class="red">26.67 %</span> covered</h4>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>30</b> relevant lines. 
-      <span class="green"><b>8</b> lines covered</span> and
-      <span class="red"><b>22</b> lines missed.</span>
+      <b>31</b> relevant lines. 
+      <span class="green"><b>31</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -318,8 +378,8 @@
           <code class="ruby">  def new</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="3">
-          
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
           
           <code class="ruby">    @list = List.new</code>
         </li>
@@ -342,20 +402,20 @@
           <code class="ruby">  def create</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="7">
-          
+        <li class="covered" data-hits="3" data-linenumber="7">
+          <span class="hits">3</span>
           
           <code class="ruby">    @list = List.new(params[:list])</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="8">
-          
+        <li class="covered" data-hits="3" data-linenumber="8">
+          <span class="hits">3</span>
           
           <code class="ruby">    if @list.save</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="9">
-          
+        <li class="covered" data-hits="2" data-linenumber="9">
+          <span class="hits">2</span>
           
           <code class="ruby">      redirect_to @list, notice: &quot;List was created&quot; </code>
         </li>
@@ -366,14 +426,14 @@
           <code class="ruby">    else</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="11">
-          
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
           
           <code class="ruby">      flash[:alert] = &quot;List wasn't created :(&quot;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="12">
-          
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
           
           <code class="ruby">      render action: &quot;new&quot;</code>
         </li>
@@ -402,217 +462,223 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="17">
-          
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
           
           <code class="ruby">    @lists = List.all</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="18">
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    respond_to do |format|</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      format.html</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
           
           
           <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="19">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="20">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def show</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="21">
-          
-          
-          <code class="ruby">    @list = List.find(params[:id])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="22">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="23">
+        <li class="covered" data-hits="1" data-linenumber="23">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">  def show</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="24">
           <span class="hits">1</span>
           
-          <code class="ruby">  def edit</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="25">
-          
-          
           <code class="ruby">    @list = List.find(params[:id])</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="26">
+        <li class="covered" data-hits="1" data-linenumber="25">
+          <span class="hits">1</span>
           
+          <code class="ruby">    respond_to do |format|</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="26">
+          <span class="hits">1</span>
           
-          <code class="ruby">  end</code>
+          <code class="ruby">      format.html</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="27">
           
           
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="28">
+        <li class="covered" data-hits="1" data-linenumber="30">
           <span class="hits">1</span>
           
-          <code class="ruby">  def update</code>
+          <code class="ruby">  def edit</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="29">
-          
+        <li class="covered" data-hits="1" data-linenumber="31">
+          <span class="hits">1</span>
           
           <code class="ruby">    @list = List.find(params[:id])</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="30">
-          
-          
-          <code class="ruby">    if @list.update_attributes(params[:list])</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="31">
-          
-          
-          <code class="ruby">      redirect_to @list, notice: &quot;List was updated&quot; </code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="32">
           
           
-          <code class="ruby">    else</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="33">
-          
-          
-          <code class="ruby">      flash[:alert] = &quot;List wasn't updated :(&quot;</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="34">
-          
-          
-          <code class="ruby">      render action: &quot;edit&quot;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="35">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="36">
-          
-          
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="37">
+        <li class="never" data-hits="" data-linenumber="33">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="38">
+        <li class="covered" data-hits="1" data-linenumber="34">
           <span class="hits">1</span>
           
-          <code class="ruby">  def destroy</code>
+          <code class="ruby">  def update</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="39">
-          
+        <li class="covered" data-hits="2" data-linenumber="35">
+          <span class="hits">2</span>
           
           <code class="ruby">    @list = List.find(params[:id])</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="40">
+        <li class="covered" data-hits="2" data-linenumber="36">
+          <span class="hits">2</span>
           
-          
-          <code class="ruby">    if @list.destroy</code>
+          <code class="ruby">    if @list.update_attributes(params[:list])</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="41">
+        <li class="covered" data-hits="1" data-linenumber="37">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">        flash[:notice] = &quot;List was destroyed successfully&quot;</code>
+          <code class="ruby">      redirect_to @list, notice: &quot;List was updated&quot; </code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="42">
-          
-          
-          <code class="ruby">        respond_to do |format|</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="43">
-          
-          
-          <code class="ruby">          format.html { redirect_to list_url }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="44">
-          
-          
-          <code class="ruby">        end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="45">
+        <li class="never" data-hits="" data-linenumber="38">
           
           
           <code class="ruby">    else</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="46">
+        <li class="covered" data-hits="1" data-linenumber="39">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">       flash[:alert] = &quot;List wasn't destroyed&quot;</code>
+          <code class="ruby">      flash[:alert] = &quot;List wasn't updated :(&quot;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="47">
+        <li class="covered" data-hits="1" data-linenumber="40">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">       respond_to do |format|</code>
+          <code class="ruby">      render action: &quot;edit&quot;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="48">
-          
-          
-          <code class="ruby">          format.html { redirect_to list_url }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="49">
-          
-          
-          <code class="ruby">        end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="50">
+        <li class="never" data-hits="" data-linenumber="41">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="51">
+        <li class="never" data-hits="" data-linenumber="42">
           
           
           <code class="ruby">  end</code>
         </li>
       
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="44">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def destroy</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="45">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @list = List.find(params[:id])</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="46">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    if @list.destroy</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="47">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      flash[:notice] = &quot;List was destroyed successfully&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="48">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      respond_to do |format|</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="49">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        format.html { redirect_to lists_path }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="50">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="51">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
         <li class="never" data-hits="" data-linenumber="52">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="53">
           
           
           <code class="ruby">end</code>
@@ -622,7 +688,259 @@
   </pre>
 </div>
       
-        <div class="source_table" id="248445bdda2832b1af5ff9803748c54234a0e8e4">
+        <div class="source_table" id="0250c240c51de9384da297a45aa5a66732e945a8">
+  <div class="header">
+    <h3>app/controllers/tasks_controller.rb</h3>
+    <h4><span class="yellow">81.82 %</span> covered</h4>
+    <div>
+      <b>22</b> relevant lines. 
+      <span class="green"><b>18</b> lines covered</span> and
+      <span class="red"><b>4</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class TasksController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before_filter :find_list</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def create</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="5">
+          <span class="hits">3</span>
+          
+          <code class="ruby">  	@task = @list.tasks.build(params[:task])</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="6">
+          <span class="hits">3</span>
+          
+          <code class="ruby">  	if @task.save</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="7">
+          <span class="hits">2</span>
+          
+          <code class="ruby">	  respond_to do |format|</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="8">
+          <span class="hits">4</span>
+          
+          <code class="ruby">        format.html {redirect_to list_path(@list), :notice =&gt; &quot;Your task was created :)&quot;}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">  	else</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  	  respond_to do |format|</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="12">
+          <span class="hits">2</span>
+          
+          <code class="ruby">	      format.html {redirect_to list_path(@list), :alert =&gt; &quot;Your task couldn't be submitted. :(&quot;}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def destroy</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  	@task = Task.find(params[:id])	</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  	if @task.destroy</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  	  respond_to do |format|</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="21">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        format.html {redirect_to list_path(@list), :notice =&gt; &quot;Your task was destroy susscefully :)&quot;}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">      end  			</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">  	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="26">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def change_status</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="27">
+          
+          
+          <code class="ruby">    @task = Task.find(params[:id])</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="28">
+          
+          
+          <code class="ruby">    (@task.status == true) ? @task.status = false : @task.status = true</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="29">
+          
+          
+          <code class="ruby">    @task.save</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="30">
+          
+          
+          <code class="ruby">    redirect_to @list </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="33">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  private </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="35">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def find_list</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="36">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    @list = List.find(params[:list_id])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="37">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="86c8429c8820c076027482edf0da95a21ccbb06f">
   <div class="header">
     <h3>app/helpers/application_helper.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -652,7 +970,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="5048f0694c74644c570513b2639556ab78aef76a">
+        <div class="source_table" id="5579ea98362015ca13040cbdc61e9166e5bc2e10">
   <div class="header">
     <h3>app/helpers/lists_helper.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -682,7 +1000,67 @@
   </pre>
 </div>
       
-        <div class="source_table" id="5154121073f90c213454bc1fb41547f371f1585e">
+        <div class="source_table" id="7be866fdc40d4d160ae017e4bf0d1144107c34d5">
+  <div class="header">
+    <h3>app/helpers/tasks_helper.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>1</b> relevant lines. 
+      <span class="green"><b>1</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">module TasksHelper</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="c8b566572799261988da44e8caa8239ce3075771">
+  <div class="header">
+    <h3>app/helpers/widgets_helper.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>1</b> relevant lines. 
+      <span class="green"><b>1</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">module WidgetsHelper</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="dcf1b6fffae3b38aca3ede920044d27c6f9f19de">
   <div class="header">
     <h3>app/models/list.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -730,13 +1108,13 @@
   </pre>
 </div>
       
-        <div class="source_table" id="6d1359111163badc2f4ead1884cf2d03b1383751">
+        <div class="source_table" id="7a72e1787ca14ca5ce3b788fef845087c6ef5987">
   <div class="header">
     <h3>app/models/task.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>5</b> relevant lines. 
-      <span class="green"><b>5</b> lines covered</span> and
+      <b>6</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -765,16 +1143,22 @@
         <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
-          <code class="ruby">  validates_presence_of (:status)</code>
+          <code class="ruby">  validates :title_task, presence: true, uniqueness: true</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
-          <code class="ruby">  validates :title_task, presence: true, uniqueness: true</code>
+          <code class="ruby">  scope :incomplete, where(:status =&gt; false)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="6">
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  scope :finished, where(:status =&gt; true)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
           
           
           <code class="ruby">end</code>
@@ -784,7 +1168,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="b4d362f93cd1063df289147bf1779cd13360463e">
+        <div class="source_table" id="1986ac20472601f342df941741507c8cd7a1a983">
   <div class="header">
     <h3>config/application.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1210,7 +1594,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="a00f3cc5020902409646c74283f2818212ef383e">
+        <div class="source_table" id="8caae49f335117f9369567ebe8a8d76405065b9b">
   <div class="header">
     <h3>config/boot.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1264,7 +1648,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="3a0af38ca4787f8e6e9f84b75fc643ff8cfa833a">
+        <div class="source_table" id="ddaa838ee47a01c7e083b642c6e676b7b4ddf33b">
   <div class="header">
     <h3>config/environment.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1312,7 +1696,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="d2e785641ec9bf21d069b07353115c4d1898bfa4">
+        <div class="source_table" id="8328860ae3ffbb7d55f3f0c3c0848c2987054abf">
   <div class="header">
     <h3>config/environments/test.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1552,7 +1936,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="831943d01ea1aac67979a158a00ea46e1dc2fd63">
+        <div class="source_table" id="bd8ff8a77a478836670c9e2483342ebb08d07984">
   <div class="header">
     <h3>config/initializers/backtrace_silencers.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1612,7 +1996,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="0ac501870f2f56e54679564271d523b17a010b8a">
+        <div class="source_table" id="3f5d7db5f7ef2932e90339e2714e6f10432d7a37">
   <div class="header">
     <h3>config/initializers/inflections.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1720,7 +2104,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="96f0a9413d89b3a5111d4dbcc931e0c873517c3c">
+        <div class="source_table" id="6f6ee97c0acbd4c10e4fd8d3626eb027ff659864">
   <div class="header">
     <h3>config/initializers/mime_types.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1768,7 +2152,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="1d675386abd3cf2c581b15825f9096f2ce8ba13e">
+        <div class="source_table" id="abf65a9aad6adc62f1dd001bfa33d2025007797c">
   <div class="header">
     <h3>config/initializers/secret_token.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1828,7 +2212,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="55c62844eba8f243cb89174afa1ebc23ef5ea40d">
+        <div class="source_table" id="3b7b5106d71707f77c711e86a6c447a8296723cb">
   <div class="header">
     <h3>config/initializers/session_store.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1894,7 +2278,7 @@
   </pre>
 </div>
       
-        <div class="source_table" id="55c48256791aebf02ecfedbb3d222bfd0e0d2c85">
+        <div class="source_table" id="e2ef256cfc15ef420ea919fe222bd03cac472480">
   <div class="header">
     <h3>config/initializers/wrap_parameters.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1996,13 +2380,13 @@
   </pre>
 </div>
       
-        <div class="source_table" id="5d678419581f9c0ca950759a1da92de478d6f00c">
+        <div class="source_table" id="8e3fadee1832af07854d0816e4db98e9e33b2293">
   <div class="header">
     <h3>config/routes.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>4</b> relevant lines. 
-      <span class="green"><b>4</b> lines covered</span> and
+      <b>5</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -2016,40 +2400,40 @@
           <code class="ruby">Todolist::Application.routes.draw do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="2">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="2">
           
-          <code class="ruby">  resources :lists do</code>
+          
+          <code class="ruby">  </code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">    resources :tasks</code>
+          <code class="ruby">  resources :lists do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">    resources :tasks</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="5">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="6">
+        <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
-          <code class="ruby">  root :to =&gt; &quot;lists#index&quot;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="7">
-          
-          
-          <code class="ruby"></code>
+          <code class="ruby">  match &quot;lists/:list_id/tasks/:id/change_status&quot; =&gt; &quot;tasks#change_status&quot;, :as =&gt; &quot;change_status_task&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="8">
@@ -2058,343 +2442,19 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="9">
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  # The priority is based upon order of creation:</code>
+          <code class="ruby">  root :to =&gt; &quot;lists#index&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="10">
           
           
-          <code class="ruby">  # first created -&gt; highest priority.</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="12">
-          
-          
-          <code class="ruby">  # Sample of regular route:</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="13">
-          
-          
-          <code class="ruby">  #   match 'products/:id' =&gt; 'catalog#view'</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="14">
-          
-          
-          <code class="ruby">  # Keep in mind you can assign values other than :controller and :action</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="15">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="16">
-          
-          
-          <code class="ruby">  # Sample of named route:</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="17">
-          
-          
-          <code class="ruby">  #   match 'products/:id/purchase' =&gt; 'catalog#purchase', :as =&gt; :purchase</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="18">
-          
-          
-          <code class="ruby">  # This route can be invoked with purchase_url(:id =&gt; product.id)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="19">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="20">
-          
-          
-          <code class="ruby">  # Sample resource route (maps HTTP verbs to controller actions automatically):</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="21">
-          
-          
-          <code class="ruby">  #   resources :products</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="22">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="23">
-          
-          
-          <code class="ruby">  # Sample resource route with options:</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="24">
-          
-          
-          <code class="ruby">  #   resources :products do</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="25">
-          
-          
-          <code class="ruby">  #     member do</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="26">
-          
-          
-          <code class="ruby">  #       get 'short'</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="27">
-          
-          
-          <code class="ruby">  #       post 'toggle'</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="28">
-          
-          
-          <code class="ruby">  #     end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="29">
-          
-          
-          <code class="ruby">  #</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="30">
-          
-          
-          <code class="ruby">  #     collection do</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="31">
-          
-          
-          <code class="ruby">  #       get 'sold'</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="32">
-          
-          
-          <code class="ruby">  #     end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="33">
-          
-          
-          <code class="ruby">  #   end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="34">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="35">
-          
-          
-          <code class="ruby">  # Sample resource route with sub-resources:</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="36">
-          
-          
-          <code class="ruby">  #   resources :products do</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="37">
-          
-          
-          <code class="ruby">  #     resources :comments, :sales</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="38">
-          
-          
-          <code class="ruby">  #     resource :seller</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="39">
-          
-          
-          <code class="ruby">  #   end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="40">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="41">
-          
-          
-          <code class="ruby">  # Sample resource route with more complex sub-resources</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="42">
-          
-          
-          <code class="ruby">  #   resources :products do</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="43">
-          
-          
-          <code class="ruby">  #     resources :comments</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="44">
-          
-          
-          <code class="ruby">  #     resources :sales do</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="45">
-          
-          
-          <code class="ruby">  #       get 'recent', :on =&gt; :collection</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="46">
-          
-          
-          <code class="ruby">  #     end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="47">
-          
-          
-          <code class="ruby">  #   end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="48">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="49">
-          
-          
-          <code class="ruby">  # Sample resource route within a namespace:</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="50">
-          
-          
-          <code class="ruby">  #   namespace :admin do</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="51">
-          
-          
-          <code class="ruby">  #     # Directs /admin/products/* to Admin::ProductsController</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="52">
-          
-          
-          <code class="ruby">  #     # (app/controllers/admin/products_controller.rb)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="53">
-          
-          
-          <code class="ruby">  #     resources :products</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="54">
-          
-          
-          <code class="ruby">  #   end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="55">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="56">
-          
-          
-          <code class="ruby">  # You can have the root of your site routed with &quot;root&quot;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="57">
-          
-          
-          <code class="ruby">  # just remember to delete public/index.html.</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="58">
-          
-          
-          <code class="ruby">  # root :to =&gt; 'welcome#index'</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="59">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="60">
-          
-          
-          <code class="ruby">  # See how all your routes lay out with &quot;rake routes&quot;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="61">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="62">
-          
-          
-          <code class="ruby">  # This is a legacy wild controller route that's not recommended for RESTful applications.</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="63">
-          
-          
-          <code class="ruby">  # Note: This route will make all actions in every controller accessible via GET requests.</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="64">
-          
-          
-          <code class="ruby">  # match ':controller(/:action(/:id))(.:format)'</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="65">
           
           
           <code class="ruby">end</code>
@@ -2404,13 +2464,13 @@
   </pre>
 </div>
       
-        <div class="source_table" id="523a12942a95622ae2a85c866ff23544309b4482">
+        <div class="source_table" id="b0f0f1c6f7f6f9f5ad3d1031deaca717b5196f20">
   <div class="header">
     <h3>spec/controllers/tasks_controller_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>0</b> relevant lines. 
-      <span class="green"><b>0</b> lines covered</span> and
+      <b>24</b> relevant lines. 
+      <span class="green"><b>24</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -2418,8 +2478,8 @@
   <pre>
     <ol>
       
-        <li class="never" data-hits="" data-linenumber="1">
-          
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
           
           <code class="ruby">require &quot;spec_helper&quot;</code>
         </li>
@@ -2430,20 +2490,20 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="3">
-          
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
           
           <code class="ruby">describe TasksController do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
-          
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
           
           <code class="ruby">  before(:all) do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
-          
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
           
           <code class="ruby">    @existing_list = create(:list)</code>
         </li>
@@ -2460,20 +2520,20 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="8">
-          
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
           
           <code class="ruby">  it &quot;should allow to enter a new task to a given list and store it if valid, the task status should be false. Should show the list page with a flash notice message&quot; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="9">
-          
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
           
           <code class="ruby">    expect {</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="10">
-          
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
           
           <code class="ruby">      post :create, {</code>
         </li>
@@ -2496,10 +2556,10 @@
           <code class="ruby">      }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="14">
+        <li class="covered" data-hits="2" data-linenumber="14">
+          <span class="hits">2</span>
           
-          
-          <code class="ruby">    }.to change { @existing_list.task.count }.by(1)</code>
+          <code class="ruby">    }.to change { @existing_list.tasks.count }.by(1)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="15">
@@ -2508,14 +2568,14 @@
           <code class="ruby">    #@existing_list.status.should eql(false)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="16">
-          
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
           
           <code class="ruby">    flash[:notice].should_not be_nil</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="17">
-          
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
           
           <code class="ruby">    response.should redirect_to(list_path(@existing_list))</code>
         </li>
@@ -2532,20 +2592,20 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="20">
-          
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
           
           <code class="ruby">  it &quot;shouldn't allow to enter an invalid task to a given list. Should show the list page with a flash error message&quot; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="21">
-          
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
           
           <code class="ruby">    expect {</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="22">
-          
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
           
           <code class="ruby">      post :create, {</code>
         </li>
@@ -2568,20 +2628,20 @@
           <code class="ruby">      }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="26">
-          
+        <li class="covered" data-hits="2" data-linenumber="26">
+          <span class="hits">2</span>
           
           <code class="ruby">    }.to change { @existing_list.tasks.count }.by(0)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="27">
-          
+        <li class="covered" data-hits="1" data-linenumber="27">
+          <span class="hits">1</span>
           
           <code class="ruby">    flash[:alert].should_not be_nil</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="28">
-          
+        <li class="covered" data-hits="1" data-linenumber="28">
+          <span class="hits">1</span>
           
           <code class="ruby">    response.should redirect_to(list_path(@existing_list))</code>
         </li>
@@ -2598,14 +2658,14 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="31">
-          
+        <li class="covered" data-hits="1" data-linenumber="31">
+          <span class="hits">1</span>
           
           <code class="ruby">  it &quot;should be able to delete an existing task. The user redirected to the list page with a flash notice message&quot; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="32">
-          
+        <li class="covered" data-hits="1" data-linenumber="32">
+          <span class="hits">1</span>
           
           <code class="ruby">    post :create, {</code>
         </li>
@@ -2619,47 +2679,47 @@
         <li class="never" data-hits="" data-linenumber="34">
           
           
-          <code class="ruby">      task: attributes_for(:invalid_task)</code>
+          <code class="ruby">      task: attributes_for(:task)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="35">
           
           
-          <code class="ruby">      created_task = assigns[:task]</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="36">
-          
-          
           <code class="ruby">    }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="37">
+        <li class="covered" data-hits="1" data-linenumber="36">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    expect {</code>
+          <code class="ruby">    @created_task = assigns[:task]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="38">
+        <li class="covered" data-hits="1" data-linenumber="37">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">      delete :destroy,id: created_task.id        </code>
+          <code class="ruby">    expect{</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="39">
+        <li class="covered" data-hits="1" data-linenumber="38">
+          <span class="hits">1</span>
           
+          <code class="ruby">      delete :destroy, list_id: @existing_list.id, id: @created_task.id        </code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="39">
+          <span class="hits">2</span>
           
           <code class="ruby">    }.to change { @existing_list.tasks.count }.by(-1)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="40">
-          
+        <li class="covered" data-hits="1" data-linenumber="40">
+          <span class="hits">1</span>
           
           <code class="ruby">    response.should redirect_to(list_path(@existing_list))</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="41">
-          
+        <li class="covered" data-hits="1" data-linenumber="41">
+          <span class="hits">1</span>
           
           <code class="ruby">    flash[:notice].should_not be_nil </code>
         </li>
@@ -2667,7 +2727,7 @@
         <li class="never" data-hits="" data-linenumber="42">
           
           
-          <code class="ruby">  end   </code>
+          <code class="ruby">  end    </code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="43">
@@ -2680,13 +2740,13 @@
   </pre>
 </div>
       
-        <div class="source_table" id="24f0b8d6e9f6415c92fc5f24cf83bc1d1880b586">
+        <div class="source_table" id="a58a846c05333eefa57b07c563f3463b146df8ab">
   <div class="header">
     <h3>spec/factories.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>11</b> relevant lines. 
-      <span class="green"><b>11</b> lines covered</span> and
+      <b>12</b> relevant lines. 
+      <span class="green"><b>12</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -2727,7 +2787,7 @@
         <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
-          <code class="ruby">    factory :invalid_event do</code>
+          <code class="ruby">    factory :invalid_list do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="7">
@@ -2763,58 +2823,250 @@
         <li class="covered" data-hits="1" data-linenumber="12">
           <span class="hits">1</span>
           
-          <code class="ruby">    title_task &quot;example task title&quot;</code>
+          <code class="ruby">    list</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="13">
           <span class="hits">1</span>
           
+          <code class="ruby">    title_task &quot;example task title&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
           <code class="ruby">    status false</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="14">
+        <li class="never" data-hits="" data-linenumber="15">
           
           
           <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="15">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    factory :invalid_task do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="16">
           <span class="hits">1</span>
           
-          <code class="ruby">        title_task &quot;&quot;</code>
+          <code class="ruby">    factory :invalid_task do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="17">
           <span class="hits">1</span>
           
-          <code class="ruby">        status true</code>
+          <code class="ruby">        title_task &quot;&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="18">
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    end</code>
+          <code class="ruby">        status true</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="19">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="20">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="5dbe44f59a1f5bd413096b6345330325c8d628ac">
+  <div class="header">
+    <h3>spec/models/list_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>4</b> relevant lines. 
+      <span class="green"><b>4</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &quot;spec_helper&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe List do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="4">
+          <span class="hits">2</span>
+          
+          <code class="ruby">  it {should validate_presence_of(:title)}</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="5">
+          <span class="hits">2</span>
+          
+          <code class="ruby">  it {should have_many(:tasks)}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="2764d04daef670343aa7388b78402fbe77651864">
+  <div class="header">
+    <h3>spec/models/task_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>5</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &quot;spec_helper&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe Task do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="4">
+          <span class="hits">2</span>
+          
+          <code class="ruby">  it { should belong_to (:list) }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="5">
+          <span class="hits">2</span>
+          
+          <code class="ruby">  it { should validate_presence_of(:title_task) }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="6">
+          <span class="hits">2</span>
+          
+          <code class="ruby">  it { should validate_uniqueness_of(:title_task) }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="a2126462cd48a5a4e6723368090fb825812c96e1">
+  <div class="header">
+    <h3>spec/routing/routes_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>4</b> relevant lines. 
+      <span class="green"><b>4</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &quot;spec_helper&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe &quot;Routes Helpers&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;routes root (/) to lists#index&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    get(&quot;/&quot;).should route_to(&quot;lists#index&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
           
           
           <code class="ruby">end</code>

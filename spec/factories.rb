@@ -3,12 +3,13 @@ FactoryGirl.define do
   factory :list do
     title "example list title"
 
-    factory :invalid_event do
+    factory :invalid_list do
         title ""
     end
   end
 
   factory :task do
+    list
     title_task "example task title"
     status false
 

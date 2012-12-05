@@ -39,7 +39,7 @@ describe ListsController do
         created_list = assigns[:list]
         created_list.should be_new_record
         response.should render_template(:new)
-        flash[:error].should_not be_nil
+        flash[:alert].should_not be_nil
       }.to change { List.count }.by(0)
     end 
 
@@ -67,7 +67,7 @@ describe ListsController do
           list: { title: "" }
         }
         existing_list.reload.title.should_not eql("")
-        flash[:error].should_not be_nil
+        flash[:alert].should_not be_nil
         response.should render_template(:edit)
       end
 

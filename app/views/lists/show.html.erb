@@ -1,23 +1,36 @@
-<fieldset>
-	<legend> List To Do  "<%=@list.title%>" | <%=link_to "Edit title", edit_list_path%></legend>
-	  <div class= "form_list">
-	  <legend>Taks</legend>
-
-	  <div id="tasks">
-		<% if @list.tasks%>  
-		  <%=render @list.tasks%>
-		<%else%>
-		  <p>This list don't have any task</p>
-		<%end%>
-	  </div>
-	<legend>New Task</legend>
-	<%=simple_form_for([@list, @list.tasks.build]) do |f|%>
-	  <div class="well">
-	      <%= f.input :title_task %>
-	      <%= f.input :status, as: :boolean  %>
-	      <%= f.submit class: "btn btn-primary  " %>
-	  </div>
-	<%end%>
+<div class="page-header">
+	<h2> List To Do  "<%=@list.title%>" | <small><%=link_to "Edit title", edit_list_path%></small></h2>
+</div>
+<div class="row">
+	<div class = "span6">
+		<fieldset>	
+			<legend>Incomplete Tasks</legend>
+			<div class="well" id="incomplete_tasks">
+				<% if @list.tasks.incomplete.size > 0%>  
+			  	<%@list.tasks.incomplete.each do |task|%>
+						<p><li>
+						<%=task.title_task%> | <%= link_to "Finished", change_status_task_path(@list.id, task), class: "btn btn-small" %> | <%= link_to "Delete", list_task_path(@list.id, task), method: :delete, data:{confirm: "Are you sure your want to delete this task?"} %></li></p>
+					<%end%>
+				<%else%>
+			  	<p>This list does not have any incomplete task.</p>
+				<%end%>
+			</div>
+			<legend>Finished Tasks</legend>
+			<div class="well" id="finished_tasks">
+				<% if @list.tasks.finished.size > 0%>  
+			  	<% @list.tasks.finished.each do |task|%>
+						<p><li><%=task.title_task%> | <%= link_to "No Finished", change_status_task_path(@list.id, task), class: "btn btn-small" %> | <%= link_to "Delete", list_task_path(@list.id, task), method: :delete, data:{confirm: "Are you sure your want to delete this task?"} %></li></p>
+					<%end%>
+				<%else%>
+			  	<p>This list does not have any finished task.</p>
+				<%end%>
+			</div>
+		</fieldset>
 	</div>
-</fieldset>
-<p>	<%=link_to "Back To All List", root_path, class: "btn"%></p>
+	<div class = "span6">
+		<legend>New Task</legend>
+		<p><%=render "task/form"%></p>
+		<p><%=link_to "Back To All List", root_path, class: "btn"%></p>
+		<input style="width:100%" readonly="readonly" value="<iframe src='<%=list_url(@list)%>' width='945' height='550'></iframe>" ></input>
+	</div>			
+</div>

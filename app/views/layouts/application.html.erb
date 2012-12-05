@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Stocktaking</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-<div class= "navbar navbar-fixed-top" >
+  <head>
+    <title>..:List To Do:..</title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div class= "navbar navbar-fixed-top" >
       <div class="navbar-inner">
         <div class "contaniner">
           <%=link_to "List to do", root_path, class: "brand"%>  
@@ -17,7 +17,6 @@
         </div>
       </div>
     </div>
-
     <footer class= "navbar navbar-fixed-bottom">
       <div class="navbar-inner">
         <div class="container">
@@ -42,7 +41,7 @@
     </div>
 
     <div id="yield" class="container">
-      <%= yield %>
+      <p><%= yield %></p>
     </div>
-</body>
+  </body>
 </html>

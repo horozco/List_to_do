@@ -15,10 +15,16 @@ class ListsController < ApplicationController
 
   def index
     @lists = List.all
+    respond_to do |format|
+      format.html
+    end
   end
 
   def show
     @list = List.find(params[:id])
+    respond_to do |format|
+      format.html
+    end
   end
 
   def edit
@@ -38,15 +44,10 @@ class ListsController < ApplicationController
   def destroy
     @list = List.find(params[:id])
     if @list.destroy
-        flash[:notice] = "List was destroyed successfully"
-        respond_to do |format|
-          format.html { redirect_to root_url }
-        end
-    else
-       flash[:alert] = "List wasn't destroyed"
-       respond_to do |format|
-          format.html { redirect_to root_url }
-        end
+      flash[:notice] = "List was destroyed successfully"
+      respond_to do |format|
+        format.html { redirect_to lists_path }
+      end
     end
   end
 end

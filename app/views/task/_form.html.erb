@@ -1,0 +1,6 @@
+<%=simple_form_for([@list, @list.tasks.build]) do |f|%>
+  <div class="well" id="task_form">
+    <%= f.input :title_task %>
+    <%= f.submit class: "btn btn-primary  " %>
+  </div>
+<%end%>

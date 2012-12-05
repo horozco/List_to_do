@@ -11,7 +11,7 @@ describe TasksController do
         list_id: @existing_list.id,
         task: attributes_for(:task)
       }
-    }.to change { @existing_list.task.count }.by(1)
+    }.to change { @existing_list.tasks.count }.by(1)
     #@existing_list.status.should eql(false)
     flash[:notice].should_not be_nil
     response.should redirect_to(list_path(@existing_list))
@@ -31,13 +31,13 @@ describe TasksController do
   it "should be able to delete an existing task. The user redirected to the list page with a flash notice message" do
     post :create, {
       list_id: @existing_list.id,
-      task: attributes_for(:invalid_task)
-      created_task = assigns[:task]
+      task: attributes_for(:task)
     }
-    expect {
-      delete :destroy,id: created_task.id        
+    @created_task = assigns[:task]
+    expect{
+      delete :destroy, list_id: @existing_list.id, id: @created_task.id        
     }.to change { @existing_list.tasks.count }.by(-1)
     response.should redirect_to(list_path(@existing_list))
-    flash[:notice].should_not be_nil 
-  end   
+    flash[:notice].should_not be_nil
+  end    
 end
